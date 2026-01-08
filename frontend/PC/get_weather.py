@@ -9,8 +9,8 @@ new_mexico_cities = [
 ]
 
 # ---------- Weather function ----------
-def get_weather():
-    city = city_dropdown.currentText()
+def get_weather(city):
+    # city will be provided by the application.
     if not city:
         result_label.setText("Please select a city.")
         icon_label.clear()

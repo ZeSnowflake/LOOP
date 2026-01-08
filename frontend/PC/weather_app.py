@@ -20,7 +20,7 @@ city_input.setPlaceholderText("Enter city name")
 layout.addWidget(city_input)
 
 get_button = QPushButton("Get Weather")
-get_button.clicked.connect(get_weather)
+get_button.clicked.connect(lambda: get_weather(city_input.text()))
 layout.addWidget(get_button)
 
 result_label = QLabel("")
